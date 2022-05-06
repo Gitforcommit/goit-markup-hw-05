@@ -58,7 +58,7 @@
             для вашего бизнеса
           </h1>
           <button type="button" class="button cursor">
-            <div class="button-text">Заказать услугу</div>
+            <div class="button-text" data-modal-open>Заказать услугу</div>
           </button>
         </div>
       </section>
@@ -116,23 +116,31 @@
         <div class="container">
           <h2 class="our-projects">Чем мы занимаемся</h2>
           <ul class="projects-list">
-            <li class="projects-pic">
+           <li class="projects-pic">
+               <div class="thumb-position">
+            <span class="background-thumb">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</span>
               <img
                 width="370"
                 src="./images/sectionaboutus1.jpg"
                 alt="работник набирает код"
                 class="project-img"
               />
+              </div>
             </li>
             <li class="projects-pic">
+              <div class="thumb-position">
+            <span class="background-thumb">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</span>
               <img
                 width="370"
                 src="./images/sectionaboutus2.jpg"
                 alt="работник занимается разработкой приложения"
                 class="project-img"
               />
+              </div>
             </li>
             <li class="projects-pic">
+              <div class="thumb-position">
+            <span class="background-thumb">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</span>
               <img
                 width="370"
                 src="./images/sectionaboutus3.jpg"
@@ -355,5 +363,12 @@
                   </div>
                   </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="btn-closing">
+        <svg width="11" height="11" class="close-button"><use href="./svg-modal/symbol-defs.svg#icon-xrectuk"></use></svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
